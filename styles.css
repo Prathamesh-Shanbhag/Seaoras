@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
 /* css variables  */
 :root {
-  --primaryCol: #3fd0d4;
+  --primaryCol: #66ccea;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -80,6 +80,25 @@ a {
   transition: var(--mainTransition);
   cursor: pointer;
 }
+
+.btn-dark {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  margin-top: 1.5rem;
+  color: var(--mainWhite);
+  background-color: var(--primaryCol);
+  border: 2px solid var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+.btn-dark:hover {
+  /* color: var(--); */
+  background-color: var(--mainBlack);
+}
+
 .btn-primary {
   color: var(--mainWhite);
   background-color: var(--primaryCol);
@@ -213,7 +232,7 @@ a {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -237,7 +256,7 @@ a {
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--primaryCol);
-    font-size: 1.2rem;
+    font-size: 2rem;
     transition: var(--mainTransition);
   }
   .nav-icon:hover {
@@ -277,7 +296,7 @@ a {
 .hero-text {
   color: var(--mainBlack);
   width: 85%;
-  font-weight: 400;
+  font-weight: 800;
   margin: 0 auto;
   letter-spacing: var(--mainSpacing);
 }
