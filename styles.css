@@ -247,8 +247,9 @@ a {
 /**********************hero* ************************/
 .hero {
   /* min-height: calc(100vh - 62px); */
-  background: linear-gradient(rgba(63, 208, 212, 0.2), rgba(0, 0, 0, 0.5));
-  background: '/assets/hero.jpg';
+  background: url('./assets/hero.jpg') center/cover no-repeat fixed,
+    linear-gradient(rgba(63, 208, 212, 0.2), rgba(0, 0, 0, 0.5));
+  opacity: 68%;
   min-height: 100vh;
   position: relative;
   top: 50%;
@@ -259,19 +260,20 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .hero-banner {
   text-align: center;
   color: var(--primaryCol);
   padding: 0 2rem;
 }
 .hero-title {
-  color: var(--mainWhite);
+  color: var(--mainBlack);
   text-transform: uppercase;
   margin-bottom: 2rem;
   letter-spacing: 0.4rem;
 }
 .hero-text {
-  color: var(--offWhite);
+  color: var(--mainBlack);
   width: 85%;
   font-weight: 400;
   margin: 0 auto;
