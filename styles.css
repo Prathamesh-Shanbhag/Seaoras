@@ -130,7 +130,7 @@ a {
   letter-spacing: 0.5rem;
   text-align: center;
 
-  font-size: 2.6rem;
+  font-size: 2.4rem;
 }
 .subtitle {
   color: var(--primaryCol);
@@ -301,14 +301,15 @@ a {
   padding: 0 2rem;
 }
 .hero-title {
-  color: var(--mainBlack);
+  color: #696969;
   text-transform: uppercase;
   margin-bottom: 2rem;
   letter-spacing: 0.4rem;
 }
 .hero-text {
   color: var(--mainBlack);
-  width: 85%;
+  width: 100%;
+  font-size: 1.5rem;
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: var(--mainSpacing);
@@ -329,7 +330,7 @@ a {
     font-size: 4.5rem;
   }
   .hero-text {
-    width: 70%;
+    width: 100%;
   }
   .hero-banner {
     opacity: 1;
@@ -424,10 +425,10 @@ a {
   position: relative;
 }
 
-.tour-img {
+/* .tour-img {
   width: 15rem;
   height: 15rem;
-}
+} */
 .tour-footer {
   padding: 1.2rem 1.5rem;
 }
