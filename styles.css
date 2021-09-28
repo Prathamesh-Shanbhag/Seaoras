@@ -75,7 +75,7 @@ a {
   margin-top: 1.5rem;
   color: var(--mainWhite);
   background-color: transparent;
-  border: 2px solid var(--mainWhite);
+  border: 2px solid var(--mainBlack);
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
   cursor: pointer;
@@ -113,7 +113,7 @@ a {
 
 .btn-white:hover {
   color: var(--primaryCol);
-  background-color: var(--mainWhite);
+  background-color: var(--mainBlack);
 }
 /* section  */
 .section {
@@ -281,9 +281,9 @@ a {
 /**********************hero* ************************/
 .hero {
   /* min-height: calc(100vh - 62px); */
-  background: url('./assets/hero.jpg') center/cover no-repeat fixed,
+  background: url('./assets/group.jpg') center/cover no-repeat fixed,
     linear-gradient(rgba(63, 208, 212, 0.2), rgba(0, 0, 0, 0.5));
-  opacity: 68%;
+  opacity: 90%;
   min-height: 100vh;
   position: relative;
   top: 50%;
