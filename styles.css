@@ -192,6 +192,7 @@ a {
   background: var(--darkGrey);
   padding-left: 2.5rem;
 }
+
 /* 272  */
 .nav-links {
   height: 0;
@@ -199,7 +200,7 @@ a {
   transition: var(--mainTransition);
 }
 .show-links {
-  height: 290px;
+  height: 235px;
 }
 
 /* fixed navbar  */
@@ -251,8 +252,9 @@ a {
   }
 
   .nav-link {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
+
   .nav-icon {
     margin-right: 0.7rem;
     color: var(--primaryCol);
@@ -264,6 +266,17 @@ a {
     transform: translateY(-10px);
   }
 }
+.nav-icon {
+  margin-right: 0.7rem;
+  color: var(--primaryCol);
+  font-size: 2rem;
+  transition: var(--mainTransition);
+}
+.nav-icon:hover {
+  color: var(--darkGrey);
+  transform: translateY(-10px);
+}
+
 /**********************end of navbar*************************/
 /**********************hero* ************************/
 .hero {
@@ -410,13 +423,10 @@ a {
 .tour-img-container {
   position: relative;
 }
-.tour-date {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--primaryCol);
-  text-transform: capitalize;
-  padding: 0.25rem 0.5rem;
+
+.tour-img {
+  width: 15rem;
+  height: 15rem;
 }
 .tour-footer {
   padding: 1.2rem 1.5rem;
@@ -477,6 +487,14 @@ a {
   cursor: pointer;
   line-height: 3rem;
 }
+.tabexcep {
+  color: var(--mainWhite);
+  font-size: 1.1rem;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  cursor: pointer;
+  line-height: 3rem;
+}
 
 .tab:hover {
   color: var(--primaryCol);
@@ -487,17 +505,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.5rem;
-}
-
-.icon {
-  color: var(--mainWhite);
-  margin-right: 1rem;
-  font-size: 2rem;
-  transition: var(--mainTransition);
-}
-.icon:hover {
-  color: var(--primaryCol);
-  transform: translateY(-10px);
 }
 
 .footer-text {
