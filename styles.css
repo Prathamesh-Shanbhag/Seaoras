@@ -95,7 +95,6 @@ a {
 }
 
 .btn-dark:hover {
-  /* color: var(--); */
   background-color: var(--mainBlack);
 }
 
@@ -149,11 +148,12 @@ a {
 .navbar {
   width: 100%;
   background: var(--offWhite);
+  align-items: center;
 }
 .nav-logo {
   padding: none;
   width: 150px;
-  height: 36px;
+  height: 31px;
 }
 
 .nav-header {
@@ -219,7 +219,7 @@ a {
   .nav-logo {
     padding: none;
     width: 228px;
-    height: 55px;
+    height: 46px;
   }
   .nav-toggle {
     display: none;
