@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
 /* css variables  */
 :root {
-  --primaryCol: #66ccea;
+  --primaryCol: #f5c4ea;
+  --primaryColDark: #e24dc2;
+  --bgCol: #f8eff6;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
   --mainBlack: #222;
@@ -43,7 +45,7 @@ h5,
 h6 {
   letter-spacing: var(--mainSpacing);
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 1.25rem;
+  /* margin-bottom: 1.25rem; */
 }
 h1 {
   font-size: 3.3rem;
@@ -87,7 +89,7 @@ a {
   padding: 1rem 1.6rem;
   margin-top: 1.5rem;
   color: var(--mainWhite);
-  background-color: var(--primaryCol);
+  background-color: var(--mainBlack);
   border: 2px solid var(--mainWhite);
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
@@ -95,7 +97,7 @@ a {
 }
 
 .btn-dark:hover {
-  background-color: var(--mainBlack);
+  background-color: var(--primaryColDark);
 }
 
 .btn-primary {
@@ -124,7 +126,7 @@ a {
 }
 
 .title {
-  color: var(--mainBlack);
+  color: var(--bgCol);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
@@ -267,7 +269,7 @@ a {
     transition: var(--mainTransition);
   }
   .nav-icon:hover {
-    color: var(--darkGrey);
+    color: var(--primaryColDark);
     transform: translateY(-10px);
   }
 }
@@ -278,7 +280,7 @@ a {
   transition: var(--mainTransition);
 }
 .nav-icon:hover {
-  color: var(--darkGrey);
+  color: var(--primaryColDark);
   transform: translateY(-10px);
 }
 
@@ -286,9 +288,9 @@ a {
 /**********************hero* ************************/
 .hero {
   /* min-height: calc(100vh - 62px); */
-  background: url('./assets/group.jpg') center/cover no-repeat fixed,
+  background: url('./assets/hero.PNG') center/cover no-repeat fixed,
     linear-gradient(rgba(63, 208, 212, 0.2), rgba(0, 0, 0, 0.5));
-  opacity: 90%;
+  opacity: 100%;
   min-height: 100vh;
   position: relative;
   top: 50%;
@@ -296,28 +298,39 @@ a {
   margin: 0 auto;
   z-index: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .hero-banner {
-  text-align: center;
+  text-align: left;
   color: var(--primaryCol);
   padding: 0 2rem;
 }
 .hero-title {
-  color: var(--mainBlack);
+  color: var(--bgCol);
   text-transform: uppercase;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   letter-spacing: 0.4rem;
 }
 .hero-text {
-  color: var(--mainBlack);
+  color: var(--bgCol);
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 800;
   margin: 0 auto;
   letter-spacing: var(--mainSpacing);
+}
+
+.hero-subtitle {
+  color: var(--bgCol);
+  width: 100%;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  letter-spacing: 1.8rem;
 }
 
 /* @media screen and (max-width: 767px) {
@@ -357,7 +370,7 @@ a {
 
 /**********************services**************************/
 .services {
-  background-color: var(--offWhite);
+  background-color: var(--mainBlack);
 }
 .service {
   text-align: center;
@@ -365,16 +378,18 @@ a {
 }
 
 .service-icon {
-  background-color: var(--primaryCol);
+  background-color: var(--bgCol);
   padding: 0.5rem;
   display: inline-block;
   font-size: 2rem;
   margin-bottom: 1.5rem;
 }
 .service-title {
+  color: var(--bgCol);
   text-transform: uppercase;
 }
 .service-text {
+  color: var(--bgCol);
   width: 80%;
   margin: 0 auto;
   line-height: 1.5;
@@ -413,10 +428,14 @@ a {
     margin: 0;
   }
 }
+
+.separation {
+  border-top: 0.02rem solid var(--bgCol);
+}
 /**********************end of services**************************/
 /* featured tours section  */
 .featured {
-  background: var(--mainWhite);
+  background: var(--mainBlack);
 }
 .tour-card {
   margin-bottom: 4rem;
@@ -436,6 +455,7 @@ a {
 } */
 .tour-footer {
   padding: 1.2rem 1.5rem;
+  background-color: var(--bgCol);
 }
 .tour-title {
   text-transform: capitalize;
